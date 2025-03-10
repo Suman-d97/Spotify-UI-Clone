@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: #060606;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Side-Bar */
+
+.sidebar{
+    width: 440px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sidebar-nav{
+    background-color: #ffffff11;
+    border-radius: 10px;
+    padding: 5px 2px;
+    margin-bottom: 10px;
+}
+.sidebar-nav .logo{
+    width: 120px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+.sidebar-nav ul{
+    list-style: none;
+}
+.sidebar-nav ul li{
+    padding: 10px 10px;
+}
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #cdcaca;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-nav ul li a span:hover{
+    text-decoration: underline;
+    color: #ffffff;;
+}
+.sidebar-nav ul li a span{
+    padding: 0 6px;
+}
+.sidebar-nav ul li a span i{
+    font-size: 18px;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 100;
+}
+.sidebar-box1{
+    background-color: #212121;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-box1 .playlist{
+    color: #ffff;
+    padding: 5px;
+}
+.sidebar-box1 .playlist h3{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-box1 .playlist p{
+    padding: 10px;
+    font-size: 13px;
+}
+.sidebar-box1 .playlist button{
+    border: none;
+    padding: 8px 15px;
+    margin: 10px 10px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}
+.sidebar-box1 .playlist button:hover{
+    transform: scale(1.1);
+}
+.privacy ul{
+    margin-top: 30%;
+}
+.privacy ul li a{
+    padding: 0 5px;
+    text-decoration: none;
+    color: #cdcaca;
+    font-size: 11px;
+    font-weight: 200;
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+.btn-english{
+    margin: 15px 0;
+}
+.btn-english button{
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 7px 13px;
+    color: #cdcaca;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+}
+.btn-english button:hover{
+    transform: scale(1.1);
+    color: #ffff;
+}
+.btn-english button i{
+    padding: 0 5px;
+}
+
+/* Main Body */
+
+.main-section{
+    margin-top: 10px;
+    margin-left: 440px;
+    background-color: #ffffff11;
+    border-radius: 10px;
+}
+.main-section .navbar{
+    width: 100%;
+    background-color: #111010;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-section .navbar button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.main-section .navbar .preview-btn{
+    padding-top: 13px;
+}
+.main-section .navbar .preview-btn button i{
+    color: #cdcaca;
+    font-size: 23px;
+    background-color: black;
+    padding: 3px 7px;
+    margin: 0 2px;
+    border-radius: 50px; 
+}
+.main-section .navbar .login-btn{
+    margin-right: 10px;
+}
+
+.main-section .navbar .login-btn .signup{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+    background: transparent;
+    outline: 0;
+    padding: 10px 20px;
+    border: 0;
+    color: #cdcaca;
+}
+.main-section .navbar .login-btn .signup:hover{
+    color: #ffff;
+
+}
+.main-section .navbar .login-btn .login{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 30px;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    color: #000;
+    background-color: #ffff;
+
+}
+.main-section .navbar .login-btn .login:hover{
+    background-color: #edecec;
+    color: #000;
+    transform: scale(1.1);
+}
+.container{
+    padding: 20px 13px;
+}
+.container h2{
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #ffffff;
+}
+.container h2:hover{
+    text-decoration: underline;
+}
+.container .card{ 
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.container .card .item{
+    width: 100%;
+    min-width: 140px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+.container .card .item:hover{
+    background-color: #212121;
+    border-radius: 8px; 
+}
+.container .card .item img{
+    width: 200px;
+    /* height: 200px; */
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* margin-right: 300px; */
+    border-radius: 50%;
+}
+.container .card .item h4{
+    color: #edecec;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.container .card .item p{
+    color: #989898;
+    font-size: 13px;
+}
+.container .play-btn{
+    /* position: relative; */
+    margin-left: 140px;
+}
+
+.container .play-btn i{
+    /* position: absolute; */
+    color: #ffffff;
+    background-color: rgb(55, 162, 55);
+    border-radius: 50%;
+    padding: 12px 15px;
+    font-size: 20px;
+
+}
+.spotify-playlist{
+    padding: 20px 13px;
+}
+.spotify-playlist h2{
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #ffffff;
+}
+.spotify-playlist h2:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .card{ 
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+.spotify-playlist .card .item{
+    width: 360px;
+    min-width: 140px;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+.spotify-playlist .card .item:hover{
+    background-color: #212121;
+    border-radius: 8px; 
+}
+.spotify-playlist .card .item img{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.spotify-playlist .card .item h4{
+    color: #edecec;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.spotify-playlist .card .item p{
+    color: #989898;
+    font-size: 13px;
+}
+.spotify-playlist .card .item p:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .play-btn{
+    /* position: relative; */
+    margin-left: 140px;
+    
+}
+
+.spotify-playlist .play-btn i{
+    /* position: absolute; */
+    color: #ffffff;
+    background-color: rgb(55, 162, 55);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 12px 15px;
+
+}
+
+/* FOOTER SECTION */
+.footer-section{
+    padding: 20px 13px;
+}
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    /* padding-left: 25px; */
+}
+.footer-section .footer .footer-links .footer-col{
+    margin-left: 10px;
+}
+.footer-section .footer .footer-links div{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.footer-section .footer .footer-links .footer-col ul li{
+    list-style: none;
+    margin: 6px 0;
+    padding: 3px 0;
+}
+.footer-section .footer .footer-links .footer-col ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #989898;
+    cursor: pointer;
+}
+.footer-section .footer .footer-links .footer-col ul li a:hover{
+    text-decoration: underline;
+    color: #ffff;
+    cursor: pointer;
+}
+.footer .footer-social i{
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #343434;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer .footer-social i:hover{
+    background-color: #817e7e;
+}
+hr{
+    margin: 20px 13px;
+    outline: 0;
+    border: 1px solid #424141;
+}
+.copyright{
+    margin: 20px 13px;
+    color: #989898;
+    font-size: 14px;
+    font-weight: 500;  
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 40px;
+}
+
+.preview h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.preview p {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.preview button{
+    padding: 12px 30px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 0;
+    outline: 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.2s all;
+}
+.preview button:hover{
+    transform:  scale(1.1);
+}
